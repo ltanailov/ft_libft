@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 22:34:26 by sselusa           #+#    #+#             */
-/*   Updated: 2019/11/07 19:45:30 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/11/07 20:41:59 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@
 **	------------------------------------------------------------------------  **
 */
 
-# define OVERFLOW 922337203685477580L
+# define OVERFLOW 0xffffffffffffffff
 
 /*
 **	------------------------------------------------------------------------  **
@@ -252,7 +252,7 @@ char				*ft_strstr(const char *haystack, const char *needle);
 **	searched. Characters that appear after a '\0' are not searched.
 */
 char				*ft_strnstr(const char *haystack, const char *needle,
-	size_t len);
+						size_t len);
 
 /*
 **	Lexicographically compare the null-terminated strings {str1} and {str2}.
