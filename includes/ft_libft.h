@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 22:34:26 by sselusa           #+#    #+#             */
-/*   Updated: 2019/11/07 21:42:26 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/11/07 21:57:47 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -480,11 +480,5 @@ void				ft_lstiter(t_list *alst, void (*f)(t_list *elem));
 **	If the allocation fails, the function returns NULL.
 */
 t_list				*ft_lstmap(t_list *alst, t_list *(*f)(t_list *elem));
-
-/*
-**	----------------------------------------------------  **
-**		MATH         -----------------------------------  **
-**	----------------------------------------------------  **
-*/
 
 #endif
