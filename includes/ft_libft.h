@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 22:34:26 by sselusa           #+#    #+#             */
-/*   Updated: 2019/11/06 22:56:32 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/11/07 19:11:57 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ void				*ft_memcpy(void *dst, const void *src, size_t len);
 **	Otherwise, {len} bytes are copied, and a NULL pointer is returned.
 */
 void				*ft_memccpy(void *dst, const void *src,
-	int chr, size_t len);
+						int chr, size_t len);
 
 /*
 **	Copies {len} bytes from memory area {src} to memory area {dst}.
