@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 22:34:26 by sselusa           #+#    #+#             */
-/*   Updated: 2019/11/07 19:11:57 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/11/07 19:45:30 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -148,6 +148,16 @@ int					ft_isascii(int chr);
 **	Tests for any printing character, including space (' ').
 */
 int					ft_isprint(int chr);
+
+/*
+**	Tests for a upper-case letter.
+*/
+int					ft_isupper(int chr);
+
+/*
+**	Tests for a lower-case letter.
+*/
+int					ft_islower(int chr);
 
 /*
 **	Converts an upper-case letter to the corresponding lower-case letter.
