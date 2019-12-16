@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 20:43:35 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 17:48:01 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/16 21:31:45 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,19 @@
 
 int					ft_strcmp(const char *str1, const char *str2)
 {
-	size_t	pos;
+	size_t			pos;
+	unsigned char	*s1;
+	unsigned char	*s2;
 
 	if (!str1 || !str2)
 		return (0);
+	s1 = (unsigned char*)str1;
+	s2 = (unsigned char*)str2;
 	pos = 0;
-	while (str1[pos] || str2[pos])
+	while (s1[pos] || s2[pos])
 	{
-		if (str1[pos] != str2[pos])
-			return ((int)(str1[pos] - str2[pos]));
+		if (s1[pos] != s2[pos])
+			return ((int)(s1[pos] - s2[pos]));
 		pos++;
 	}
 	return (0);
