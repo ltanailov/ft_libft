@@ -6,7 +6,7 @@
 #    By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/06 22:34:04 by sselusa           #+#    #+#              #
-#    Updated: 2019/12/16 18:13:56 by sselusa          ###   ########.fr        #
+#    Updated: 2019/12/16 18:59:06 by sselusa          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,19 +73,29 @@ all: $(NAME)
 
 -include $(DEPS)
 $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c | $(OBJS_DIR)
-	$(CC) $(CFLAGS) $(DFLAGS) -c -o $@ $< $(IFLAGS) $(INCL)
+	@/bin/echo -n "."
+	@$(CC) $(CFLAGS) $(DFLAGS) -c -o $@ $< $(IFLAGS) $(INCL)
 
 $(OBJS_DIR):
-	mkdir -p $(OBJS_DIR)
+	@mkdir -p $(OBJS_DIR)
+	@/bin/echo -n "Building $(NAME) ["
 
 $(NAME): $(OBJS)
-	ar rc $(NAME) $(OBJS)
-	ranlib $(NAME)
+	@/bin/echo -n "] "
+	@ar rc $(NAME) $(OBJS)
+	@ranlib $(NAME)
+	@/bin/echo "done!"
 
 clean:
-	rm -rf $(OBJS_DIR)
+	@if [ -d "$(OBJS_DIR)" ]; then \
+		rm -rf $(OBJS_DIR); \
+		/bin/echo "$(OBJS_DIR) deleted!"; \
+	fi
 
 fclean: clean
-	rm -rf $(NAME)
+	@if [ -f "$(NAME)" ]; then \
+		rm -rf $(NAME); \
+		/bin/echo "$(NAME) deleted!"; \
+	fi
 
 re: fclean all
