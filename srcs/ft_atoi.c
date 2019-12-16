@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 21:36:29 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 17:47:26 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/16 18:15:32 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,8 @@ int					ft_atoi(const char *str)
 	size_t				pos;
 
 	num = 0;
-	pos = pass_spaces(str);
-	sign = get_sign(str, &pos);
+	pos = ft_pass_spaces(str);
+	sign = ft_get_sign(str, &pos);
 	while (ft_isdigit(str[pos]))
 	{
 		if (sign == 1 && (num > (UL_MAX / 10) ||
