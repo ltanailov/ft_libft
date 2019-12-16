@@ -6,11 +6,11 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 21:00:25 by sselusa           #+#    #+#             */
-/*   Updated: 2019/11/08 20:55:38 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/16 17:48:36 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
+#include "ft_libft.h"
 
 void				ft_striter(char *s, void (*f)(char *))
 {

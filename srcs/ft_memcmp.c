@@ -6,11 +6,11 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 19:27:41 by sselusa           #+#    #+#             */
-/*   Updated: 2019/11/08 20:01:14 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/16 17:47:09 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_memory.h"
+#include "ft_libft.h"
 
 int					ft_memcmp(const void *mem1, const void *mem2, size_t len)
 {

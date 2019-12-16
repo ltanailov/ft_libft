@@ -6,11 +6,11 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 19:26:53 by sselusa           #+#    #+#             */
-/*   Updated: 2019/11/08 20:00:59 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/16 17:47:08 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_memory.h"
+#include "ft_libft.h"
 
 void				*ft_memchr(const void *src, int chr, size_t len)
 {

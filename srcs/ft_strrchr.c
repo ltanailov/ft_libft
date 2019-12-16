@@ -6,11 +6,11 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 20:35:54 by sselusa           #+#    #+#             */
-/*   Updated: 2019/11/08 21:10:12 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/16 17:49:27 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
+#include "ft_libft.h"
 
 char				*ft_strrchr(const char *src, int chr)
 {

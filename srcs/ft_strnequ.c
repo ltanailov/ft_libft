@@ -6,11 +6,11 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 21:16:53 by sselusa           #+#    #+#             */
-/*   Updated: 2019/11/08 20:58:05 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/16 17:49:12 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
+#include "ft_libft.h"
 
 int					ft_strnequ(char const *s1, char const *s2, size_t n)
 {

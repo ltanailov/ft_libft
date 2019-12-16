@@ -6,11 +6,11 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 19:42:29 by sselusa           #+#    #+#             */
-/*   Updated: 2019/11/08 20:52:10 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/16 17:46:02 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_char.h"
+#include "ft_libft.h"
 
 int					ft_isalnum(int chr)
 {

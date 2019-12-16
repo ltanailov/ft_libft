@@ -6,11 +6,11 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 21:21:45 by sselusa           #+#    #+#             */
-/*   Updated: 2019/11/08 21:08:25 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/16 17:49:30 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
+#include "ft_libft.h"
 
 static int			ft_wordcount(char *s, char c, size_t *start,
 						int *current_wordcount)

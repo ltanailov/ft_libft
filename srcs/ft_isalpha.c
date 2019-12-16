@@ -6,11 +6,11 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 19:40:13 by sselusa           #+#    #+#             */
-/*   Updated: 2019/11/08 20:52:27 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/16 17:46:04 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_char.h"
+#include "ft_libft.h"
 
 int					ft_isalpha(int chr)
 {

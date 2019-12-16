@@ -6,11 +6,11 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 19:47:20 by sselusa           #+#    #+#             */
-/*   Updated: 2019/11/08 20:52:23 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/16 17:49:44 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_char.h"
+#include "ft_libft.h"
 
 int					ft_tolower(int chr)
 {

@@ -6,11 +6,11 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 21:02:14 by sselusa           #+#    #+#             */
-/*   Updated: 2019/11/08 20:58:05 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/16 17:48:55 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
+#include "ft_libft.h"
 
 char				*ft_strmap(char const *s, char (*f)(char))
 {

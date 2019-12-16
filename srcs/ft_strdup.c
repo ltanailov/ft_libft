@@ -6,11 +6,11 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 20:20:26 by sselusa           #+#    #+#             */
-/*   Updated: 2019/11/08 20:55:34 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/16 17:48:26 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
+#include "ft_libft.h"
 
 char				*ft_strdup(const char *src)
 {
