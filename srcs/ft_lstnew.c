@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/10 18:26:24 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 17:47:01 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/16 18:16:59 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ t_list				*ft_lstnew(void const *content, size_t content_size)
 		return (NULL);
 	if (!(lst->content = ft_memalloc(content ? content_size : 1)))
 	{
-		ft_memdel(lst);
+		ft_memdel((void**)&lst);
 		return (NULL);
 	}
 	if (!content)
