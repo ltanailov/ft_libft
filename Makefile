@@ -6,7 +6,7 @@
 #    By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/06 22:34:04 by sselusa           #+#    #+#              #
-#    Updated: 2019/12/16 18:59:06 by sselusa          ###   ########.fr        #
+#    Updated: 2019/12/16 19:59:45 by sselusa          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,6 +54,8 @@ FT_OUTPUT_SRCS = ft_putchar.c ft_putstr.c ft_putendl.c ft_putnbr.c \
 
 FT_LIST_SRCS = ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c \
 	ft_lstiter.c ft_lstmap.c
+
+FT_GNL_SRCS = ft_gnl.c
 
 ALL_SRCS = $(FT_MEMORY_SRCS) $(FT_CHAR_SRCS) $(FT_STRING_SRCS) \
 	$(FT_XTOY_SRCS) $(FT_OUTPUT_SRCS) $(FT_LIST_SRCS)

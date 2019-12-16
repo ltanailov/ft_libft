@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 22:34:26 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 17:35:04 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/16 19:19:58 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@
 # include "ft_xtoy.h"
 # include "ft_output.h"
 # include "ft_list.h"
+# include "ft_gnl.h"
 
 #endif
