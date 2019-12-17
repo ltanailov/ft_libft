@@ -6,7 +6,7 @@
 #    By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/06 22:34:04 by sselusa           #+#    #+#              #
-#    Updated: 2019/12/17 17:09:10 by sselusa          ###   ########.fr        #
+#    Updated: 2019/12/17 17:34:10 by sselusa          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,7 @@ FT_STRING_SRCS = ft_strlen.c ft_strdup.c ft_strcpy.c ft_strncpy.c ft_strcat.c \
 	ft_striter.c ft_striteri.c ft_strmap.c ft_strmapi.c ft_strequ.c \
 	ft_strnequ.c ft_strsub.c ft_strjoin.c ft_strtrim.c ft_strsplit.c
 
-FT_XTOY_SRCS = ft_atoi.c ft_itoa.c
+FT_XTOY_SRCS = ft_atoi.c ft_itoa.c ft_lltoa_base.c
 
 FT_OUTPUT_SRCS = ft_putchar.c ft_putstr.c ft_putendl.c ft_putnbr.c \
 	ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c

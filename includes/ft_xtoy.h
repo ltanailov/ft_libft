@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 22:51:36 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 17:36:09 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/17 17:33:57 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,10 +42,17 @@
 int					ft_atoi(const char *str);
 
 /*
-**	Allocate and returns a “fresh” string ending with ’\0’
+**	Allocates and returns a “fresh” string ending with ’\0’
 **	representing the integer {n} given as argument.
 **	If the allocation fails, the function returns NULL.
 */
 char				*ft_itoa(int n);
+
+/*
+**	Allocates and returns a “fresh” string ending with ’\0’
+**	representing the long long integer {num} in {base} given as argument.
+**	If the allocation fails, the function retuns NULL.
+*/
+char				*ft_lltoa_base(long long num, int base);
 
 #endif
