@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/16 19:20:35 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 19:48:11 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/17 16:22:37 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,8 @@
 */
 
 /*
-**	Reads a {line} ending with a newline character ('\n') from a {file descriptor}.
+**	Reads a {line} ending with a newline character ('\n')
+**	from a {file descriptor}.
 */
 int					ft_gnl(const int fd, char **line);
 
