@@ -1,31 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_libft.h                                         :+:      :+:    :+:   */
+/*   ft_math.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/06 22:34:26 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/17 16:37:33 by sselusa          ###   ########.fr       */
+/*   Created: 2019/12/17 16:34:13 by sselusa           #+#    #+#             */
+/*   Updated: 2019/12/17 17:07:51 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LIBFT_H
-# define FT_LIBFT_H
+#ifndef FT_MATH_H
+# define FT_MATH_H
 
 /*
 **	------------------------------------------------------------------------  **
-**		MODULES      -------------------------------------------------------  **
+**		INCLUDES     -------------------------------------------------------  **
 **	------------------------------------------------------------------------  **
 */
 
-# include "ft_memory.h"
-# include "ft_char.h"
-# include "ft_string.h"
-# include "ft_xtoy.h"
-# include "ft_output.h"
-# include "ft_list.h"
-# include "ft_math.h"
-# include "ft_gnl.h"
+# include "ft_libft.h"
+
+/*
+**	------------------------------------------------------------------------  **
+**		FUNCTIONS    -------------------------------------------------------  **
+**	------------------------------------------------------------------------  **
+*/
+
+/*
+**	Raises the {num} to the power of {exp}.
+*/
+long long			ft_pow(long long num, unsigned int exp);
+
+/*
+**	Returns square root of {num}.
+*/
+unsigned long long	ft_sqrt(unsigned long long num);
 
 #endif
