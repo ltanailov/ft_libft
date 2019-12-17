@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 21:36:29 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 18:15:32 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/17 16:26:56 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,9 @@ static size_t		ft_get_sign(const char *str, size_t *pos)
 
 int					ft_atoi(const char *str)
 {
-	unsigned long		num;
-	int					sign;
-	size_t				pos;
+	unsigned long	num;
+	int				sign;
+	size_t			pos;
 
 	num = 0;
 	pos = ft_pass_spaces(str);

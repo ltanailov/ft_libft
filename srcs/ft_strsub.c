@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 21:17:25 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 17:49:36 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/17 16:29:04 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char				*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	char	*sub;
+	char			*sub;
 
 	if (!s)
 		return (NULL);

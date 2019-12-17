@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 20:29:37 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 21:18:53 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/17 16:28:04 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char				*ft_strchr(const char *src, int chr)
 {
-	size_t		pos;
+	size_t			pos;
 
 	if (!src)
 		return (NULL);

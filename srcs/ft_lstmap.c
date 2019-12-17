@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/10 18:37:10 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 17:46:58 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/17 16:27:34 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_list				*ft_lstmap(t_list *alst, t_list *(*f)(t_list *elem))
 {
-	t_list		*res;
+	t_list			*res;
 
 	if (!alst || !f)
 		return (NULL);

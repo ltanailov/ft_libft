@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/10 18:26:24 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 21:33:21 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/17 16:27:38 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_list				*ft_lstnew(void const *content, size_t content_size)
 {
-	t_list		*lst;
+	t_list			*lst;
 
 	if (!(lst = (t_list*)malloc(sizeof(t_list))))
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 21:19:14 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 17:48:43 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/17 16:28:22 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char				*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*join;
-	size_t	len;
+	char			*join;
+	size_t			len;
 
 	if (!s1 || !s2)
 		return (NULL);

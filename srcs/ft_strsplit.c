@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 21:21:45 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 22:03:57 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/17 16:28:57 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,10 +53,10 @@ static char			*ft_getword(char **s, char c)
 
 char				**ft_strsplit(char const *s, char c)
 {
-	char		**split;
-	char		*word;
-	int			wordcount;
-	int			current_wordcount;
+	char			**split;
+	char			*word;
+	int				wordcount;
+	int				current_wordcount;
 
 	if (!s)
 		return (ft_memalloc(0));

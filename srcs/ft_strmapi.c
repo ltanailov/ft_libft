@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 21:12:54 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 17:48:59 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/17 16:28:37 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t		len;
-	char		*map;
+	size_t			len;
+	char			*map;
 
 	if (!s || !f)
 		return (NULL);

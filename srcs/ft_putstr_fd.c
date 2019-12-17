@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 21:44:40 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 17:47:44 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/17 16:27:57 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void				ft_putstr_fd(const char *s, int fd)
 {
-	size_t	len;
-	size_t	symbols;
+	size_t			len;
+	size_t			symbols;
 
 	if (!s)
 		return ;

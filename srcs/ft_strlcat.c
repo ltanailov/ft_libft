@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 20:28:13 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 17:48:47 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/17 16:28:26 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t				ft_strlcat(char *dst, const char *src, size_t len)
 {
-	size_t		src_len;
-	size_t		dst_len;
-	size_t		i;
-	size_t		j;
+	size_t			src_len;
+	size_t			dst_len;
+	size_t			i;
+	size_t			j;
 
 	if (!dst || !src)
 		return (0);

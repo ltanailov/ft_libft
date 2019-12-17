@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 19:31:42 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 17:47:05 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/17 16:27:40 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void				*ft_memalloc(size_t size)
 {
-	void		*area;
+	void			*area;
 
 	area = NULL;
 	if ((area = malloc(size)))

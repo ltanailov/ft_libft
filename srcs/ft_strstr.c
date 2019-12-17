@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 20:38:29 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 17:49:33 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/17 16:29:01 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char				*ft_strstr(const char *haystack, const char *needle)
 {
-	size_t		i;
-	size_t		j;
+	size_t			i;
+	size_t			j;
 
 	if (!haystack || !needle)
 		return (NULL);

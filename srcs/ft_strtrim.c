@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 21:20:03 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 17:49:40 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/17 16:29:08 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ static int			ft_is_space(int c)
 
 char				*ft_strtrim(char const *s)
 {
-	size_t		start;
-	size_t		end;
-	char		*res;
+	size_t			start;
+	size_t			end;
+	char			*res;
 
 	if (!s)
 		return (NULL);

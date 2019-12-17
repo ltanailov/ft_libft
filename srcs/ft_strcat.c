@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 20:24:25 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 17:47:19 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/17 16:28:02 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char				*ft_strcat(char *str1, const char *str2)
 {
-	size_t		len;
-	char		*dst;
+	size_t			len;
+	char			*dst;
 
 	if (!str1 || !str2)
 		return (NULL);

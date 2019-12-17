@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 20:22:35 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 17:48:08 by sselusa          ###   ########.fr       */
+/*   Updated: 2019/12/17 16:28:09 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char				*ft_strcpy(char *dst, const char *src)
 {
-	size_t		len;
+	size_t			len;
 
 	if (!dst)
 		return (NULL);
