@@ -6,7 +6,7 @@
 #    By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/06 22:34:04 by sselusa           #+#    #+#              #
-#    Updated: 2019/12/17 22:06:38 by sselusa          ###   ########.fr        #
+#    Updated: 2019/12/17 22:30:21 by sselusa          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,49 +74,43 @@ INCL = $(INCL_DIR)
 #		RULES        ------------------------------------  #
 #	-----------------------------------------------------  #
 
-.PHONY: all clean fclean re so
+.PHONY: all clean fclean re bin so
 
 all: $(NAME)
 
 -include $(DEPS)
 $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c | $(OBJS_DIR)
-	@/bin/echo -n "."
+	@/bin/echo -n "═"
 	@$(CC) $(CFLAGS) $(DFLAGS) -c -o $@ $< $(IFLAGS) $(INCL)
 
 $(OBJS_DIR):
 	@mkdir -p $(OBJS_DIR)
 
-$(NAME): | $(OBJS_DIR)/done
+$(NAME): $(OBJS)
 	@ar rc $(NAME) $(OBJS)
 	@ranlib $(NAME)
-	@/bin/echo "$(NAME) done!"
-
-$(OBJS_DIR)/done:
-	@/bin/echo -n "Building ["
-	@make $(OBJS)
-	@/bin/echo "]"
-	@/bin/echo > $(OBJS_DIR)/done
+	@/bin/echo "╣ $(NAME)"
 
 so: $(SHARED)
 
-$(SHARED): | $(OBJS_DIR)/done
+$(SHARED): $(OBJS)
 	@$(CC) -o $(SHARED) $(SO_FLAGS) $(OBJS)
-	@/bin/echo "$(SHARED) done!"
+	@/bin/echo "╣ $(SHARED)"
 
 clean:
 	@if [ -d "$(OBJS_DIR)" ]; then \
 		rm -rf $(OBJS_DIR); \
-		/bin/echo "Objects deleted!"; \
+		/bin/echo "╣ rm objects"; \
 	fi
 
 fclean: clean
 	@if [ -f "$(NAME)" ]; then \
 		rm -rf $(NAME); \
-		/bin/echo "$(NAME) deleted!"; \
+		/bin/echo "╣ rm $(NAME)"; \
 	fi
 	@if [ -f "$(SHARED)" ]; then \
 		rm -rf $(SHARED); \
-		/bin/echo "$(SHARED) deleted!"; \
+		/bin/echo "╣ rm $(SHARED)"; \
 	fi
 
 re: fclean all
