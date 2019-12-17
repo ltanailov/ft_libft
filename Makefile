@@ -6,7 +6,7 @@
 #    By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/06 22:34:04 by sselusa           #+#    #+#              #
-#    Updated: 2019/12/17 22:38:40 by sselusa          ###   ########.fr        #
+#    Updated: 2019/12/17 23:10:11 by sselusa          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -100,7 +100,7 @@ $(SHARED): $(OBJS)
 clean:
 	@if [ -d "$(OBJS_DIR)" ]; then \
 		rm -rf $(OBJS_DIR); \
-		/bin/echo "╣ rm objects"; \
+		/bin/echo "╣ rm ft_libft objects"; \
 	fi
 
 fclean: clean
