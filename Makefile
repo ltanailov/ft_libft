@@ -6,7 +6,7 @@
 #    By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/06 22:34:04 by sselusa           #+#    #+#              #
-#    Updated: 2019/12/17 17:08:19 by sselusa          ###   ########.fr        #
+#    Updated: 2019/12/17 17:09:10 by sselusa          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -94,7 +94,7 @@ $(NAME): $(OBJS)
 clean:
 	@if [ -d "$(OBJS_DIR)" ]; then \
 		rm -rf $(OBJS_DIR); \
-		/bin/echo "$(OBJS_DIR) deleted!"; \
+		/bin/echo "Objects deleted!"; \
 	fi
 
 fclean: clean
