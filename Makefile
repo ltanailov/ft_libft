@@ -6,7 +6,7 @@
 #    By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/06 22:34:04 by sselusa           #+#    #+#              #
-#    Updated: 2019/12/17 17:34:10 by sselusa          ###   ########.fr        #
+#    Updated: 2019/12/17 18:23:51 by sselusa          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,7 @@
 #	-------------------------------------------------------------------------  #
 
 NAME = libft.a
+SHARED = libft.so
 
 #	-----------------------------------------------------  #
 #		FLAGS        ------------------------------------  #
@@ -24,6 +25,7 @@ CC = gcc
 CFLAGS = -Wall -Werror -Wextra
 DFLAGS = -MMD -MP
 IFLAGS = -I
+SO_FLAGS = -shared -fPIC
 
 #	-----------------------------------------------------  #
 #		SOURCES      ------------------------------------  #
@@ -83,13 +85,18 @@ $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c | $(OBJS_DIR)
 
 $(OBJS_DIR):
 	@mkdir -p $(OBJS_DIR)
-	@/bin/echo -n "Building $(NAME) ["
+	@/bin/echo -n "Building ["
 
 $(NAME): $(OBJS)
 	@/bin/echo -n "] "
 	@ar rc $(NAME) $(OBJS)
 	@ranlib $(NAME)
-	@/bin/echo "done!"
+	@/bin/echo "$(NAME) done!"
+
+so: $(OBJS)
+	@/bin/echo -n "] "
+	@$(CC) -o $(SHARED) $(SO_FLAGS) $(OBJS)
+	@/bin/echo "$(SHARED) done!"
 
 clean:
 	@if [ -d "$(OBJS_DIR)" ]; then \
@@ -101,6 +108,10 @@ fclean: clean
 	@if [ -f "$(NAME)" ]; then \
 		rm -rf $(NAME); \
 		/bin/echo "$(NAME) deleted!"; \
+	fi
+	@if [ -f "$(SHARED)" ]; then \
+		rm -rf $(SHARED); \
+		/bin/echo "$(SHARED) deleted!"; \
 	fi
 
 re: fclean all
