@@ -6,7 +6,7 @@
 #    By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/06 22:34:04 by sselusa           #+#    #+#              #
-#    Updated: 2019/12/17 22:30:21 by sselusa          ###   ########.fr        #
+#    Updated: 2019/12/17 22:38:40 by sselusa          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,16 +16,6 @@
 
 NAME = libft.a
 SHARED = libft.so
-
-#	-----------------------------------------------------  #
-#		FLAGS        ------------------------------------  #
-#	-----------------------------------------------------  #
-
-CC = gcc
-CFLAGS = -Wall -Werror -Wextra
-DFLAGS = -MMD -MP
-IFLAGS = -I
-SO_FLAGS = -shared -fPIC
 
 #	-----------------------------------------------------  #
 #		SOURCES      ------------------------------------  #
@@ -71,17 +61,27 @@ DEPS = $(OBJS:.o=.d)
 INCL = $(INCL_DIR)
 
 #	-----------------------------------------------------  #
+#		FLAGS        ------------------------------------  #
+#	-----------------------------------------------------  #
+
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra
+DFLAGS = -MMD -MP
+IFLAGS = -I $(INCL_DIR)
+SO_FLAGS = -shared -fPIC
+
+#	-----------------------------------------------------  #
 #		RULES        ------------------------------------  #
 #	-----------------------------------------------------  #
 
-.PHONY: all clean fclean re bin so
+.PHONY: all clean fclean re so
 
 all: $(NAME)
 
 -include $(DEPS)
 $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c | $(OBJS_DIR)
 	@/bin/echo -n "═"
-	@$(CC) $(CFLAGS) $(DFLAGS) -c -o $@ $< $(IFLAGS) $(INCL)
+	@$(CC) $(CFLAGS) $(DFLAGS) -c -o $@ $< $(IFLAGS)
 
 $(OBJS_DIR):
 	@mkdir -p $(OBJS_DIR)
