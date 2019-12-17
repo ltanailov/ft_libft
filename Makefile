@@ -6,7 +6,7 @@
 #    By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/06 22:34:04 by sselusa           #+#    #+#              #
-#    Updated: 2019/12/17 18:23:51 by sselusa          ###   ########.fr        #
+#    Updated: 2019/12/17 22:06:38 by sselusa          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,7 +74,7 @@ INCL = $(INCL_DIR)
 #		RULES        ------------------------------------  #
 #	-----------------------------------------------------  #
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re so
 
 all: $(NAME)
 
@@ -85,16 +85,21 @@ $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c | $(OBJS_DIR)
 
 $(OBJS_DIR):
 	@mkdir -p $(OBJS_DIR)
-	@/bin/echo -n "Building ["
 
-$(NAME): $(OBJS)
-	@/bin/echo -n "] "
+$(NAME): | $(OBJS_DIR)/done
 	@ar rc $(NAME) $(OBJS)
 	@ranlib $(NAME)
 	@/bin/echo "$(NAME) done!"
 
-so: $(OBJS)
-	@/bin/echo -n "] "
+$(OBJS_DIR)/done:
+	@/bin/echo -n "Building ["
+	@make $(OBJS)
+	@/bin/echo "]"
+	@/bin/echo > $(OBJS_DIR)/done
+
+so: $(SHARED)
+
+$(SHARED): | $(OBJS_DIR)/done
 	@$(CC) -o $(SHARED) $(SO_FLAGS) $(OBJS)
 	@/bin/echo "$(SHARED) done!"
 
