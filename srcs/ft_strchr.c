@@ -14,11 +14,8 @@
 
 char				*ft_strchr(const char *src, int chr)
 {
-	size_t			pos;
-
 	if (!src)
 		return (NULL);
-	pos = 0;
 	while (*src)
 	{
 		if (*src == (char)chr)
