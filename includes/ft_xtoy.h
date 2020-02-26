@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 22:51:36 by sselusa           #+#    #+#             */
-/*   Updated: 2020/02/26 16:42:23 by sselusa          ###   ########.fr       */
+/*   Updated: 2020/02/26 17:41:13 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,12 +89,12 @@ char				*ft_lltoa(long long n);
 **	Returns a unsigned long long integer
 **	representing the string {n} ending with '\0' given as argument.
 */
-unsigned long long		ft_atoull(const char *str);
+unsigned long long	ft_atoull(const char *str);
 
 /*
 **	Returns a long long integer in base of {base} given as argument.
 **	representing the string {str} ending with '\0' given as argument.
 */
-long long		ft_atoll_base(char *str, int base);
+long long			ft_atoll_base(char *str, int base);
 
 #endif
