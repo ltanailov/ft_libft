@@ -6,7 +6,7 @@
 /*   By: sselusa <sselusa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 22:54:56 by sselusa           #+#    #+#             */
-/*   Updated: 2019/12/16 17:35:53 by sselusa          ###   ########.fr       */
+/*   Updated: 2020/02/26 16:31:19 by sselusa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,5 +87,13 @@ void				ft_lstiter(t_list *alst, void (*f)(t_list *elem));
 **	If the allocation fails, the function returns NULL.
 */
 t_list				*ft_lstmap(t_list *alst, t_list *(*f)(t_list *elem));
+
+
+/*
+**	Adds the element with {content} of {content_size}
+**	at the ending of the {list}.
+*/
+void				ft_lstaddback(t_list **list, void *content,
+									size_t content_size);
 
 #endif
